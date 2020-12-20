@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Web全栈</title>
+    <style type="text/css" media="screen">
+        body{
+            background-color:#fff;
+        }
+        .all{
+            width: 150px;
+            margin:50px 0 0 600px;
+            position: absolute;
+            height: 500px;
+        }
+        .web{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left:-42%;
+            top:50%;
+            margin-left:-50px;
+            margin-top:-50px;
+            background-color:#ccc;
+            z-index:99;
+        }
+        .web::before{
+            width: 150px;
+            height:150px;
+            border-radius: 50%;
+            position: absolute;
+            content:"Web全栈";
+            text-align: center;
+            line-height: 150px;
+            font-size:30px;
+            font-weight:700;
+            color:#fff;
+            left:41px;
+            top:40px;
+            margin-left:-15px;
+            margin-top:-15px;
+            background-color: #2a385e;
+        }
+        .jQuery{
+            width:250px;
+            height:250px;
+            border-radius: 50%;
+            position: absolute;
+            left:-90px;
+            top:223px;
+            margin-left:-50px;
+            margin-top:-50px;
+            animation: rot 10s linear infinite;
+            border: 2px dashed #2a385e;
+        }
+        .jQuery::before{
+            width: 83px;
+            height: 83px;
+            content:"";
+            border-radius: 50%;
+            position: absolute;
+            left:-3%;
+            top:53%;
+            margin-left:-50px;
+            margin-top:-50px;
+            background:rgba(249,235,251,0.5);
+        }
+        .jQuery::after{
+            width: 63px;
+            height: 63px;
+            content: "jQuery";
+            color:white;
+            line-height: 63px;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            left:1%;
+            top:57%;
+            margin-left:-50px;
+            margin-top:-50px;
+            background:rgba(231,144,236,0.5);
+            animation: roll 10s linear infinite;
+        }
+        .node{
+           width: 90px;
+           height: 90px;
+           content:"";
+           border-radius: 50%;
+           position: absolute;
+           left:74%;
+           top:-1%;
+           margin-left:-50px;
+           margin-top:-50px;
+           background: rgba(255,235,232,0.5);
+}
+        .node::before{
+          width: 70px;
+          height: 70px;
+          content: "node.js";
+          color:white;
+          line-height: 70px;
+          text-align: center;
+          border-radius: 50%;
+          position: absolute;
+          left:67%;
+          top:68%;
+          margin-left:-50px;
+          margin-top:-50px;
+          background-color: rgba(227,115,126,0.6);
+          animation: roll 10s linear infinite;
+}
+        .Html5{
+            width:350px;
+            height:350px;
+            border-radius: 50%;
+            position: absolute;
+            left:-94%;
+            top:35%;
+            margin-left:-50px;
+            margin-top:-50px;
+            animation: rot 10s linear infinite;
+            border: 2px dashed #ccc;
+        }
+        .Html5::before{
+            width: 93px;
+            height: 93px;
+            content:"";
+            border-radius: 50%;
+            position: absolute;
+            left:98%;
+            top:80%;
+            margin-left:-50px;
+            margin-top:-50px;
+            background-color: rgba(238,247,250,0.6);
+            z-index:999;
+}
+        .Html5::after{
+            width: 78px;
+            height: 78px;
+            content: "Html5";
+            color:#fff;
+            line-height: 78px;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            left:100%;
+            top:82%;
+            margin-left:-50px;
+            margin-top:-50px;
+            background:rgba(157,215,235,0.5);
+            animation: roll 10s linear infinite;
+            z-index:999;
+}
+        .CSS3{
+            width: 75px;
+            height: 75px;
+            content:"";
+            border-radius: 50%;
+            position: absolute;
+            left:39%;
+            top:102%;
+            margin-left:-50px;
+            margin-top:-50px;
+            background-color: rgba(243,252,244,0.7);
+}
+        .CSS3::before{
+            width: 60px;
+            height: 60px;
+            content: "CSS3";
+            color:#fff;
+            line-height: 63px;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            left:76%;
+            top:76%;
+            margin-left:-50px;
+            margin-top:-50px;
+            background:rgba(185,239,201,0.7);
+            animation: roll 10s linear infinite;
+}
+}
+        .three{
+            width: 441px;
+            height: 441px;
+            position: absolute;
+            left:-136%;
+            top:23%;
+            margin-left:-50px;
+            margin-top:-50px;
+            border-radius: 50%;
+            animation: rot 10s linear infinite;
+            border: 2px dashed #ccc ;
+            z-index:999;
+}
+        .three::before{
+            width: 112px;
+            height: 112px;
+            content:"";
+            border-radius: 50%;
+            left:20%;
+            top:10%;
+            margin-left:-50px;
+            margin-top:-50px;
+            background: rgba(233,244,245,0.7);
+            position: absolute;
+}
+        .three::after{
+            width: 88px;
+            height: 88px;
+            content: "webAPP";
+            line-height: 88px;
+            text-align: center;
+            border-radius: 50%;
+            left:23%;
+            top:13%;
+            margin-left:-50px;
+            margin-top:-50px;
+            background: rgba(126,198,208,0.5);
+            position: absolute;
+            animation: roll 10s linear infinite;
+}
+        .Angular{
+            width: 105px;
+            height: 105px;
+            content: "";
+            line-height: 63px;
+            text-align: center;
+            border-radius: 50%;
+            left:76%;
+            top:4%;
+            margin-left:-50px;
+            margin-top:-50px;
+            background: rgb(255,221,243);
+            position: absolute;
+}
+        .Angular::before{
+           width: 83px;
+           height: 83px;
+           content: "Angular.js";
+           line-height: 83px;
+           text-align: center;
+           border-radius: 50%;
+           left:57%;
+           top:58%;
+           margin-left:-50px;
+           margin-top:-50px;
+           background:rgba(238,57,142,0.3);
+           position: absolute;
+           animation: roll 10s linear infinite;
+}
+        .React{
+          width: 98px;
+          height: 98px;
+          border-radius: 50%;
+          left: 99%;
+          top: 58%;
+          margin-left:-50px;
+          margin-top:-50px;
+          background:rgba(254,230,234,0.8);
+          position: absolute;
+}
+        .React::before{
+         width: 75px;
+         height: 75px;
+         content: "React.js";
+         line-height: 75px;
+         text-align: center;
+         border-radius: 50%;
+         position: absolute;
+         left: 64%;
+         top: 63%;
+         margin-left:-50px;
+         margin-top:-50px;
+         background:rgba(255,128,153,0.4);
+         animation: roll 10s linear infinite;
+}
+        .canvad{
+         width: 98px;
+         height: 98px;
+         border-radius: 50%;
+         position: absolute;
+         left: 72%;
+         top: 93%;
+         margin-left:-50px;
+         margin-top:-50px;
+         background-color:rgba(242,247,123,0.2);
+
+}
+        .canvad::before{
+         width: 71px;
+         height:71px;
+         content: "canvad";
+         line-height: 71px;
+         text-align: center;
+         border-radius: 50%;
+         position: absolute;
+         left: 66%;
+         top: 65%;
+         margin-left:-50px;
+         margin-top:-50px;
+         background-color:rgba(242,247,123,0.5);
+         animation: roll 10s linear infinite;
+}
+        .zepto{
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        left: 14%;
+        top: 82%;
+        margin-left:-50px;
+        margin-top:-50px;
+        background: rgba(230,243,253,0.9);
+        position: absolute;
+}
+        .zepto::before{
+        width: 86px;
+        height: 86px;
+        content: "zepto.js";
+        line-height: 86px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        left: 56%;
+        top: 58%;
+        margin-left:-50px;
+        margin-top:-50px;
+        background:rgba(110,189,248,0.3);
+        animation: roll 10s linear infinite;
+}
+        .zepto::after{
+}
+@keyframes rot {
+           to{
+           }
+           from{
+               transform:rotate(360deg);
+           }
+       }
+       @keyframes roll{
+        to{
+        transform: rotate(360deg);
+        }
+        from{
+        transform: rotate(0deg);
+        }
+       }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="web"></div>
+         <div class="jQuery">
+         <div class="node"></div>
+    </div>
+         <div class="Html5">
+             <div class="CSS3"></div>
+         </div>
+
+    <div class="three" style="width: 441px;height: 441px;position: absolute;left: -126%;top: 25%;margin-left: -50px;margin-top: -50px;border-radius: 50%;animation: rot 10s linear infinite;border: 2px dashed #ccc;z-index: 999;">
+         <div class="Angular"></div>
+         <div class="React"></div>
+         <div class="canvad"></div>
+         <div class="zepto"></div>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>小鱼游动</title>
+    <style>
+    body{
+        background-color:rgba(0, 0, 128, 0.8);
+    }
+    .fish {
+        width: 174px;
+        height: 126px;
+        background: url('images/fish8.png') 0px 0px no-repeat;
+        animation: shark 1s infinite steps(11) , swim 10s linear infinite;
+    }
+    @keyframes shark {
+        100% {
+            background-position: 0px -1386px;
+        }
+    }
+    @keyframes swim {
+        30% {
+            transform: translate(1000px,0) rotate(0deg);
+        }
+        50% {
+            transform: translate(1000px,0) rotate(180deg);
+        }
+        80% {
+            transform: translate(0,0) rotate(180deg);
+        }
+
+    }
+    .fish1 {
+        width: 174px;
+        height: 126px;
+        background: url('images/fish8.png') 0px 0px no-repeat;
+        animation: shark1 1s infinite steps(11) , swim1 15s linear infinite;
+    }
+    @keyframes shark1 {
+        100% {
+            background-position: 0px -1386px;
+        }
+    }
+    @keyframes swim1 {
+        30% {
+            transform: translate(500px,0) rotate(0deg);
+        }
+        50% {
+            transform: translate(800px,0) rotate(180deg);
+        }
+        80% {
+            transform: translate(0,100px) rotate(180deg);
+        }
+        100%{
+            transform: translate(0,0px) rotate(0deg);
+        }
+    }
+        .fish2 {
+        width: 174px;
+        height: 126px;
+        background: url('images/fish8.png') 0px 0px no-repeat;
+        animation: shark2 2s infinite steps(11) , swim2 25s linear infinite;
+    }
+    @keyframes shark2 {
+        100% {
+            background-position:  0px -1386px;
+        }
+    }
+    @keyframes swim2 {
+        30% {
+            transform: translate(500px,0) rotate(0deg);
+        }
+        50% {
+            transform: translate(1000px,0) rotate(180deg);
+        }
+        80% {
+            transform: translate(0,200px) rotate(270deg);
+        }
+        100%{
+            transform: translate(0,0px) rotate(0deg);
+        }
+    }
+    .shark{
+            width: 509px;
+            height: 270px;
+            margin: -200px auto;
+            background: url('images/shark1.png');
+            animation:box 1s steps(8) infinite;
+        }
+        @keyframes box{
+            0%{
+
+            }
+            100%{
+                background-position: left -2160px;
+            }
+    </style>
+    </head>
+</head>
+<body>
+
+    <div class="fish"></div>
+    <div class="fish1"></div>
+    <div class="fish2"></div>
+     <div class="shark"></div>
+
+</body>
+</html>
